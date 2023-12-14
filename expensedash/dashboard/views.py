@@ -26,3 +26,6 @@ def logout_user(request):
     logout(request)
     messages.success(request, 'You have successfully logged out.')
     return render(request, 'home.html', {})
+
+def dashboard(request):
+    return render(request, 'dashboard.html', {})
